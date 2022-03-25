@@ -13,7 +13,9 @@ namespace EmpManagementApi.Models
         public bool Permanent { get; set; }
         #endregion
 
+        #region SqlConnection
         SqlConnection con = new SqlConnection("server=DESKTOP-VE9QC92\\TRAINERINSTANCE;database=employeeApp; integrated security=true");
+        #endregion
 
         #region Read Data
         public List<EmployeeDetailsModel> GetEmployeeList()
